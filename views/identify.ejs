@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <title>Identify Contact</title>
+  </head>
+
+  <body class="bg-gray-100 h-screen w-screen flex items-center justify-center">
+    <form 
+      action="/api/identify" 
+      method="post" 
+      class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-md">
+      
+      <h2 class="text-2xl font-bold mb-6 text-gray-900">Identify Contact</h2>
+
+      <div class="mb-6">
+        <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email address</label>
+        <input type="email" id="email" name="email" placeholder="john.doe@fluxkart.com"
+               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" />
+      </div>
+
+      <div class="mb-6">
+        <label for="phoneNumber" class="block mb-2 text-sm font-medium text-gray-900">Phone number</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="+91 12345-67890"
+               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" />
+      </div>
+
+      <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5">Submit</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
